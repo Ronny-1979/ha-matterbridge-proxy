@@ -1,0 +1,28 @@
+{
+  "name": "Matterbridge Proxy",
+  "version": "0.1.1",
+  "slug": "matterbridge_proxy",
+  "description": "Proxy for externally Matterbridge",
+  "url": "https://github.com/Ronny-1979/ha-matterbridge-proxy/tree/main/matterbridge-proxy",
+  "arch": ["amd64", "aarch64", "armv7", "armhf"],
+  "startup": "services",
+  "boot": "auto",
+  "init": true,
+  "ingress": true,
+  "ingress_port": 8099,
+  "panel_icon": "mdi:bridge",
+  "panel_title": "Matterbridge Proxy",
+  "timeout": 30,
+
+  "options": {
+    "host": null,
+    "port": 8283,
+    "https": false
+  },
+
+  "schema": {
+    "host": "str?",
+    "port": "int(1,65535)",
+    "https": "bool"
+  }
+}
